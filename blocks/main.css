@@ -19,7 +19,7 @@
 .profile {
   display: flex;
 }
-.profile__paragraph__content {
+.profile__paragraph {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -75,7 +75,7 @@
   color: #000;
   border-radius: 10px;
 }
-.card__image {
+.galery__image {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -89,7 +89,7 @@
   justify-content: space-around;
   margin: 20px auto;
 }
-.card__title {
+.galery__title {
   font-size: 24px;
   line-height: 1.3;
   font-weight: 900;
@@ -98,12 +98,12 @@
   white-space: nowrap;
   overflow: hidden;
 }
-.button__like {
+.galery__button {
   border: none;
   width: 25px;
   height: 19px;
 }
-.button__like:hover {
+.galery__button:hover {
   opacity: 0.7;
 }
 
