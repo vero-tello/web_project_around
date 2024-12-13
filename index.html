@@ -18,6 +18,168 @@
       <header class="header">
         <img class="header__image" src="images/Vector.png" alt="around" />
       </header>
+      <main class="content">
+        <section class="content__profile">
+          <div class="content__profile_content">
+            <div class="content__image">
+              <img
+                class="profile__image"
+                src="images/Jaques.jpg"
+                alt="foto del perfil"
+              />
+            </div>
+            <div class="profile__paragraph_content">
+              <h2 class="profile__name">Jacques Cousteau</h2>
+              <button
+                class="profile__button profile__button_edit"
+                type="button"
+              >
+                <img
+                  class="button__image_edit"
+                  src="images/Pencil.png"
+                  alt="edit"
+                />
+              </button>
+              <p class="profile__paragraph_about">Explorador</p>
+            </div>
+          </div>
+          <button class="profile__button profile__button_add" type="button">
+            <img
+              class="button__image_add"
+              src="images/Vector_add.png"
+              alt="add"
+            />
+          </button>
+        </section>
+        <section class="content__galery">
+          <div class="galery__card">
+            <img
+              class="card__image"
+              src="images/Yosemite.jpg"
+              alt="rio entre el bosque y montañas"
+            />
+            <div class="galery__content">
+              <p class="card__title">Valle de Yosemite</p>
+              <button type="button" class="button__like">
+                <img
+                  class="card__like"
+                  src="images/Vector_like.svg"
+                  alt="icono me gusta"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="galery__card">
+            <img
+              class="card__image"
+              src="images/lago_Louise.png"
+              alt="lago Louise"
+            />
+            <div class="galery__content">
+              <p class="card__title">Lago Louise</p>
+              <button type="button" class="button__like">
+                <img
+                  class="card__like"
+                  src="images/Vector_like.svg"
+                  alt="icono me gusta"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="galery__card">
+            <img
+              class="card__image"
+              src="images/montañas_calvas.png"
+              alt="montañas calvas"
+            />
+            <div class="galery__content">
+              <p class="card__title">Montañas Calvas</p>
+              <button type="button" class="button__like">
+                <img
+                  class="card__like"
+                  src="images/Vector_like.svg"
+                  alt="icono me gusta"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="galery__card">
+            <img
+              class="card__image"
+              src="images/letamar.png"
+              alt="montañas nevadas"
+            />
+            <div class="galery__content">
+              <p class="card__title">Latemar</p>
+              <button type="button" class="button__like button__like_active">
+                <img
+                  class="card__like"
+                  src="images/Vector_like.svg"
+                  alt="icono me gusta"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="galery__card">
+            <img
+              class="card__image"
+              src="images/Vanois_National.png"
+              alt="lago entre montañas"
+            />
+            <div class="galery__content">
+              <p class="card__title">Vanois National...</p>
+              <button type="button" class="button__like">
+                <img
+                  class="card__like"
+                  src="images/Vector_like.svg"
+                  alt="icono me gusta"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="galery__card">
+            <img
+              class="card__image"
+              src="images/lago_di_braies.png"
+              alt="lago Di Braies"
+            />
+            <div class="galery__content">
+              <p class="card__title">Lago di Braies</p>
+              <button type="button" class="button__like">
+                <img
+                  class="card__like"
+                  src="images/Vector_like.svg"
+                  alt="icono me gusta"
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="popup">
+          <div class="popup__container">
+            <button type="button" class="popup__close"></button>
+            <h3 class="popup__title">Editar perfil</h3>
+            <form class="popup__form" name="edit_profile">
+              <input
+                type="text"
+                name="name"
+                class="popup__input popup__input-name"
+                placeholder="Nombre"
+                required
+              />
+              <input
+                type="text"
+                name="job"
+                class="popup__input popup__input-job"
+                placeholder="Acerca de mí"
+                required
+              />
+              <button type="submit" class="popup__button">Guardar</button>
+            </form>
+          </div>
+        </section>
+      </main>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>

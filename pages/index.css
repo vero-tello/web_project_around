@@ -1,3 +1,6 @@
 @import url(../Vendor/normalize.css);
 @import url(../Vendor/Fonts/);
 @import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/main.css);
+@import url(../blocks/popup.css);
