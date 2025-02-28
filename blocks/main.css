@@ -87,7 +87,7 @@
 .galery__content {
   display: flex;
   justify-content: space-around;
-  margin: 20px auto;
+  margin: 20px 20px;
 }
 .galery__title {
   font-size: 24px;
@@ -100,8 +100,7 @@
 }
 .galery__button {
   border: none;
-  width: 25px;
-  height: 19px;
+  background-color: #fff;
 }
 .galery__button:hover {
   opacity: 0.7;
