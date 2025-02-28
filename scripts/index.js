@@ -1,5 +1,5 @@
-let profileName = document.querySelector(".profile__paragraph_name");
-let profileJob = document.querySelector(".profile__paragraph_about");
+let profileName = document.querySelector(".profile__name");
+let profileJob = document.querySelector(".profile__about");
 let editButton = document.querySelector(".profile__button");
 
 let popupElement = document.querySelector(".popup");
