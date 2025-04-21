@@ -69,13 +69,20 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 20px 17px;
 }
-.galery__card {
-  max-width: 280px;
+.card {
   background-color: #fff;
   color: #000;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 20px;
 }
-.galery__image {
+.content__image {
+  width: 280px;
+  height: 280px;
+}
+.card__image {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -84,12 +91,7 @@
   opacity: 0.8;
   cursor: pointer;
 }
-.galery__content {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 20px;
-}
-.galery__title {
+.card__name {
   font-size: 24px;
   line-height: 1.3;
   font-weight: 900;
@@ -98,12 +100,25 @@
   white-space: nowrap;
   overflow: hidden;
 }
-.galery__button {
+.card__vector-like {
   border: none;
   background-color: #fff;
 }
-.galery__button:hover {
+.card__vector-like:hover {
   opacity: 0.7;
+}
+.card__delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 19px;
+  background-image: url(../images/Trash.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  margin-right: 15px;
+  margin-top: 18px;
 }
 
 @media screen and (min-width: 585px) and (max-width: 880px) {
