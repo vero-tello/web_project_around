@@ -5,11 +5,19 @@ const buttonDelete = document.querySelector(".card__delete-button");
 const profileName = document.querySelector(".profile__name");
 const profileJob = document.querySelector(".profile__about");
 const editButton = document.querySelector(".profile__button");
-const popupElement = document.querySelector(".popup");
+const popupElement = document.querySelector(".popup__profile");
 const popupCloseButton = popupElement.querySelector(".popup__close");
 const formElement = document.querySelector(".popup__form");
 const nameInput = formElement.querySelector(".popup__input-name");
 const jobInput = formElement.querySelector(".popup__input-job");
+
+const popupAdd = document.querySelector(".popup__add");
+const closePopupAdd = document.querySelector(".popup__close-add");
+const addButton = document.querySelector(".profile__button-add");
+const popupTitle = popupAdd.querySelector(".popup__input-title");
+const popupLink = popupAdd.querySelector(".popup__input-link");
+const formAdd = popupAdd.querySelector(".popup__form-add");
+const addCard = document.querySelector(".popup__button");
 
 const initialCards = [
   {
@@ -53,14 +61,14 @@ initialCards.forEach((card) => {
 });
 
 function openPopup() {
-  popupElement.classList.add("popup_open");
+  popupElement.classList.add("popup__open");
 
   nameInput.value = profileName.textContent;
   jobInput.value = profileJob.textContent;
 }
 
 function closePopup() {
-  popupElement.classList.remove("popup_open");
+  popupElement.classList.remove("popup__open");
 }
 
 function handleProfileFormSubmit(evt) {
@@ -76,9 +84,17 @@ editButton.addEventListener("click", openPopup);
 popupCloseButton.addEventListener("click", closePopup);
 formElement.addEventListener("submit", handleProfileFormSubmit);
 
-buttonDelete.addEventListener("click", function () {
-  card.remove();
+addButton.addEventListener("click", () => {
+  formAdd.classList.toggle("open__popup");
 });
+
+function closeAdd() {
+  popupAdd.classList.remove("popup_open");
+}
+
+addButton.addEventListener("click", openPopupAdd);
+closePopupAdd.addEventListener("click", closeAdd);
+formAdd.addEventListener("submit", handleAdd);
 
 buttonLike.addEventListener("click", () => {
   buttonLike.classList.toggle("card__like-button");

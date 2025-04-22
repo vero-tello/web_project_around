@@ -43,7 +43,7 @@
               <p class="profile__about">Explorador</p>
             </div>
           </div>
-          <button class="profile__button profile__button_add" type="button">
+          <button class="profile__button profile__button-add" type="button">
             <img class="profile__add" src="images/Vector_add.png" alt="add" />
           </button>
         </section>
@@ -66,7 +66,7 @@
             </div>
           </div>
         </template>
-        <section class="popup">
+        <section class="popup popup__profile">
           <div class="popup__container">
             <button type="button" class="popup__close"></button>
             <h3 class="popup__title">Editar perfil</h3>
@@ -86,6 +86,29 @@
                 required
               />
               <button type="submit" class="popup__button">Guardar</button>
+            </form>
+          </div>
+        </section>
+        <section class="popup popup__add">
+          <div class="popup__container">
+            <button type="button" class="popup__close-add"></button>
+            <h3 class="popup__title">Nuevo lugar</h3>
+            <form class="popup__form" name="new-place">
+              <input
+                type="text"
+                name="name"
+                class="popup__input popup__input-title"
+                placeholder="Titulo"
+                required
+              />
+              <input
+                type="text"
+                name="link"
+                class="popup__input popup__input-link"
+                placeholder="Enlace de la imagen"
+                required
+              />
+              <button type="submit" class="popup__button">Crear</button>
             </form>
           </div>
         </section>
